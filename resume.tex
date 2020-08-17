@@ -1,0 +1,156 @@
+%-------------------------
+% Using: Resume in Latex Template
+% Author: Sourabh Bajaj (https://github.com/sb2nov)
+% Modified: Zeyu Li (https://github.com/Zeyu-Li)
+% License: MIT
+%------------------------
+
+% doc size
+\documentclass[letterpaper,12pt]{article}
+
+% packages
+\usepackage[empty]{fullpage}
+\usepackage[english]{babel}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+% color
+\usepackage{xcolor}
+\definecolor{blueviolet}{RGB}{67, 114, 186}
+% end packages
+
+% hyperlink color
+\hypersetup{
+colorlinks=true,
+linkcolor=black,
+filecolor=blue,
+urlcolor=blueviolet,
+}
+
+% Sections formatting
+\titlespacing{\section}{0pt}{1ex}{2ex}
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+\item\small{
+\textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+
+% more formatting
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% circular unordered list
+\renewcommand{\labelitemii}{$\circ$}
+
+%-------------------------------------------
+%%%%%%  Resume STARTS HERE  %%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+  \begin{center} 
+  \textbf{Joe Smith}\\
+  Mobile : (999) 999-9999\\
+  Email : \href{mailto:joe.smith@gmail.com}{joe.smith@gmail.com}\\
+  Website: \href{https:/joesmith.com}{joesmith.com}\\
+  \end{center}
+
+
+%-----------Summery-----------------
+\section{\color{blue}Summery}
+  \resumeSubHeadingListStart
+      Seeking position in: \textbf{Summer Student Software Developer}\newline\newline
+A student looking for a summer position as a software dev.
+  \resumeSubHeadingListEnd
+
+
+%-----------Skills-----------------
+\section{\color{blue}Skills}
+
+  \resumeSubHeadingListStart
+
+    \resumeItemListStart
+    \resumeItemListEnd
+
+      {Tech:}
+      \resumeItemListStart
+        \resumeItem{}
+          {Python (Django), C++, C\#, JavaScript/TypeScript, CSS, SQL, Git/GitHub, AWS, \LaTeX}
+        \resumeItemListEnd
+    \resumeSubheading
+      {Design/ Productivity:}
+      \resumeItemListStart
+        \resumeItem{}
+          {Microsoft office: (PowerPoint, Word, and Excel), Adobe suit (Photoshop, Illustrator, After Effects), 
+Blender}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------Projects-----------------
+\section{\color{blue}Projects}
+  \resumeSubHeadingListStart
+
+    \resumeItemListStart
+    \resumeItemListEnd
+
+      {}
+      \resumeItemListStart
+        \resumeItem{\href{https://www.youtube.com/watch?v=dQw4w9WgXcQ}{Video Project: }}
+          {A video made for you}
+        \resumeItem{\href{joesmith.com}{Website: }}
+          {A static login website}
+          
+      {** Coding projects can be accessed via \href{joesmith.com}{website link} or go to \href{https://github.com/joe-smith}{github.com/joe-smith}
+      }
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------Awards-----------------
+
+\section{\color{blue}Awards}
+
+  \resumeSubHeadingListStart
+
+    \resumeItemListStart
+    \resumeItemListEnd
+
+      {}
+      \resumeItemListStart
+        \resumeItem{}
+          {Chess Champion: 2020}
+        \resumeItem{}
+          {Top Company of the Year: 2019}
+        \resumeItem{}
+          {New York Bestsellers: 2018}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% -----------Education-----------------
+\section{\color{blue}Education}
+  \resumeSubHeadingListStart
+      {MIT - Undergraduate in Computer Science} {\hfill Class: 2020-}
+  \resumeSubHeadingListEnd
+  
+
+% -----------Reference-----------------
+\section{\color{blue}Reference}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dr. Joe Smith - PhD Student\\}
+      \href{mailto:joe.smith@gmail.com}{joe.smith@gmail.com}\\
+      {(999) 999-9999}
+  \resumeSubHeadingListEnd
+% end
+
+\end{document}
